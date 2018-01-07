@@ -83,7 +83,7 @@ class Move extends Command {
             clock.show(false, nr + ": move (" + dX + "," + dY + ")");
             p = fp.move(dX, dY); 
         } catch (InterruptedException ie) { 
-            clock.show(false, nr + ": move interrupted"); return; 
+            clock.show(false, nr + ": move interrupted"); return;
             }
         clock.show(false, nr + ": move -> (" + p.getX() + "," + p.getY() +")");
         commands.remove(this);
